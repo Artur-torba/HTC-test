@@ -26,12 +26,12 @@ window.onload = function(){
 	}
 
 
-var music = document.getElementById('music');
-music.onclick = function(){
-	this.className = 'hide';
+      var music = document.getElementById('music');
+         music.onclick = function(){
+	       this.className = 'hide';
 }
 
-var computer = document.getElementById('computer');
+       var computer = document.getElementById('computer');
 computer.onclick = function(){
 	this.className = 'hide';
 }
@@ -70,30 +70,24 @@ else if(option == 'pussy'){
 	pussy.classList.remove('hide')
 }
  }
- // var username = document.getElementById('username');
- // username.onclick = function(){
- // 	this.innerHTML =  '<input  id="changename" type="text" autofocus>'
- //    var changename = document.getElementById('changename');
-     
+ 
+    var input1 = document.getElementById('1');
+        input1.value = localStorage.getItem('dataForMyInput1') || 'Виталя Гора';
+        input1.oninput = function(){
+        localStorage.setItem('dataForMyInput1', input1.value);
+    }
 
- // }
-
- var input1 = document.getElementById('1');
- input1.value = localStorage.getItem('dataForMyInput1') || 'Виталя Гора';
- input1.oninput = function(){
-localStorage.setItem('dataForMyInput1', input1.value);
-}
-var input2 = document.getElementById('2');
- input2.value = localStorage.getItem('dataForMyInput2') || '+7 (982) 797 67 57';
- input2.oninput = function(){
-localStorage.setItem('dataForMyInput2', input2.value);
-}
-var input3 = document.getElementById('3');
- input3.value = localStorage.getItem('dataForMyInput3') || 'artur.torba@mail.ru';
- input3.oninput = function(){
-localStorage.setItem('dataForMyInput3', input3.value);
-}
-
+    var input2 = document.getElementById('2');
+        input2.value = localStorage.getItem('dataForMyInput2') || '+7 (982) 797 67 57';
+        input2.oninput = function(){
+        localStorage.setItem('dataForMyInput2', input2.value);
+    }
+    
+    var input3 = document.getElementById('3');
+        input3.value = localStorage.getItem('dataForMyInput3') || 'artur.torba@mail.ru';
+        input3.oninput = function(){
+        localStorage.setItem('dataForMyInput3', input3.value);
+    }
 }
 
 	

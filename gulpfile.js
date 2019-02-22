@@ -12,7 +12,7 @@ const browserSync = require('browser-sync').create();
 const cssFiles = [
 'node_modules/normalize.css/normalize.css',
 'src/css/index.css',
-'src/css/some.css'
+// 'src/css/some.css'
 ];
 const jsFiles = ['src/js/other.js',
 'src/js/main.js.js'

@@ -9,8 +9,7 @@
     
 </head>
 <body>
-    <section>
-        <div class="tabs">
+        <main class="tabs">
         <div class="tabs-header">
             <div class="tab-h active" data-tab = "0">Профиль</div>
             <div class="tab-h" data-tab = "1">Друзья пользователя</div>
@@ -19,40 +18,40 @@
             <div class="tab-b" style="display:block">
                 <div class="content">
                    <div class="profile">
-                      <img src="src/img/makets.zip.png" alt="">
-                       <input type="button" value="Добавить в друзья" Class="add_friend">
+                      <img src="src/img/avatat.png" alt="avatar" class="profile__avatar">
+                       <input type="button" value="Добавить в друзья" class="profile__add_friend">
                     </div>
                    <div class="info">
                        <div class="user_name">
-                            <p id="username"><input type="text"  value="Виталя Гора" id="1"></p>
+                            <p id="username"><input type="text"  value="Виталя Гора" id="1" class="user_name__value"></p>
                             <p>г. Нижние Шахты</p>
                        </div>
                        <div class="user_info">
                            <p Class="status">Семейное положение </p>
                            <p class="status_result">холост</p><br>
                            <p class="phone">Телефон</p>
-                           <p class="phone_number"><input type="tel" value="+7 (982) 797 67 57"  id="2"></p><br>
+                           <p class="phone_number"><input type="tel" value="+7 (982) 797 67 57"  id="2" class="phone_number__value"></p><br>
                            <p class="email">E-mail</p>
-                           <p class="email_adres"><a><input type="text"  value="artur.torba@mail.ru" id="3"></a></p>
+                           <p class="email_adres"><a><input type="text"  value="artur.torba@mail.ru" id="3" class="email_adres__value"></a></p>
                        </div>
-                       <div class="user_interests"size="">
+                       <div class="user_interests">
                            <p>Интересы</p>
-                             <select name="select" id="select">
-                               <option value=""></option>
-                               <option value="music">музыка</option>
-                               <option value="computers">компьютеры</option>
-                               <option value="radio">радио</option>
-                               <option value="dance">танцы</option>
-                               <option value="pussy">кошечки</option>
+                             <select name="select" id="select" class="user_interests__select">
+                               <option class="user_interests__select__option"value=""></option>
+                               <option class="user_interests__select__option" value="music">музыка</option>
+                               <option class="user_interests__select__option" value="computers">компьютеры</option>
+                               <option class="user_interests__select__option" value="radio">радио</option>
+                               <option class="user_interests__select__option" value="dance">танцы</option>
+                               <option class="user_interests__select__option" value="pussy">кошечки</option>
                              </select>
                               <input type="submit" class="interest_btn" value="добавить" id="addfriend">
                        </div>
-                        <div class="block_intrest" id='block'>
-                            <div class="interest_music"><input type="button" value="музыка" id="music"></div>
-                            <div class="interest_computer"><input type="button" value="компьютеры" id="computer"></div>
-                            <div class="interest_radio"><input type="button" value="радио" id="radio"></div>
-                            <div class="interest_dance"><input type="button" value="танцы" id="dance"></div>
-                            <div class="interest_pussyes"><input type="button" value="кошечки" id="pussy"></div>
+                        <div class="block_intrest" id="block">
+                            <div class="interest_music block_intrest__select"><input type="button" value="музыка" id="music"></div>
+                            <div class="interest_computer block_intrest__select"><input type="button" value="компьютеры" id="computer"></div>
+                            <div class="interest_radio block_intrest__select"><input type="button" value="радио" id="radio"></div>
+                            <div class="interest_dance block_intrest__select"><input type="button" value="танцы" id="dance"></div>
+                            <div class="interest_pussyes block_intrest__select"><input type="button" value="кошечки" id="pussy"></div>
                         </div>
                    </div>
                 </div>
@@ -69,7 +68,7 @@
                         <p class="friend_status">Оnline</p></a>
                       </div>
                     </div> 
-
+                    
                     <div class="friend_block"><a href="#">
                         <img src="src/img/minAva2.png" alt="" class="friend_avatar">
                       <div class="friend_info">
@@ -168,15 +167,14 @@
                         <p class="friend_status">Оnline</p></a>
                       </div>
                     </div>
-
-
+                   </div>
+                  </div>
                  </div> 
                 </div>
             </div>
-            
         </div>
-    </div>
-    </section>
+    </main>
+  
     
     <script src="dest/js/all.js"></script>
 </body>

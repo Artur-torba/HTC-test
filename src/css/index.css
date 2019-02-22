@@ -1,16 +1,14 @@
 body{
 	background-color: #e3e3e3;
-	 font-family:  Arial;
-	 overflow-x: hidden;
-}
-section{height:100vh;
-	width: 100%;
+	font-family:  Arial;
+	overflow-x: hidden;
+	height:100vh;
+    width: 100%;
 	display:flex;
 	justify-content: center;
 	align-items:center; 
 	margin: 0 auto;
 }
-
 
 a{
 	color: #629ac5;
@@ -18,37 +16,34 @@ a{
 br{
 	line-height:22px;
 }
-.tabs{
 
-
-} 
-
-.user_name input{width: 100%;
+.user_name__value{width: 100%;
 	border:none;
 	text-align: left;
 	cursor:pointer;
 	text-transform: capitalize;
 }
-.phone_number input{width: 100%;
+.phone_number__value{width: 100%;
 	border:none;
 	text-align: left;
 	cursor:pointer;
 	text-transform: capitalize;
 }
 
-.email_adres input {
-	
-	border:none;
+.email_adres__value {
+    border:none;
 	text-align: left;
 	cursor:pointer;
 	text-align: left;
 	color: #629ac5;
 }
+
 .email_adres{
 	margin: 0 auto;
 }
-.tab-h{margin-right: 10px;
-	
+
+.tab-h{
+	margin-right: 10px;
 	display: inline-block;
 	border-radius:  5px 5px 0px 0px;
 	padding:5px 15px;
@@ -62,23 +57,26 @@ br{
 	/*box-shadow: 0 0 3px rgba(0,0,0,0.5);*/
 
 }
+
 .tabs-header{
 	position: relative;
 	z-index: 2;
 }
+
 .tabs-header p{
 	margin: 0;
-
 }
-.tab-b{	width: 490px;
+
+.tab-b{	
+	width: 490px;
 	height: 280px;
 	display:none;
 	padding: 10px;
-	
 	background-color: #ffffff;
 	border-radius: 0px 5px 5px  5px;
 	box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
+
 .tabs-body{
 	
 }
@@ -93,14 +91,21 @@ br{
 	margin-top: 10px;
 }
 
-.profile{width: 130px;
+.profile{
+	width: 130px;
 	margin-left: 5px;
-	
-
 }
-.profile .add_friend, .interest_btn{font-size: 12px;
+
+.profile__avatar{
+	border-radius: 5px;
+	box-shadow:0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+.profile__add_friend, .interest_btn{
+	font-size: 12px;
 	color: white;
-	background-color: #e67f00;
+	/*background-color: #e67f00;*/
+	background: linear-gradient(to top right, #e65a00 20%, #e68100 50%);
 	height: 30px;
 	width: 130px;
 	margin-top: 5px;
@@ -111,7 +116,8 @@ br{
     text-shadow: 0px -0.5px 1px black;
 }
 
-.info{display: flex;
+.info{
+	display: flex;
 	width: 360px;
 	text-align:left;
 	flex-direction: column;
@@ -139,8 +145,8 @@ br{
 	text-transform: capitalize;
 }
 
-
-.user_name  p:first-child{font-size: 23px;
+.user_name  p:first-child{
+	font-size: 23px;
 	font-weight: normal;
 	color:black;
 	position: relative;
@@ -163,7 +169,7 @@ br{
 	margin-left: 138px;
 }
 
-.user_interests select{
+.user_interests__select{
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 25px;
@@ -182,10 +188,13 @@ br{
 	font-weight: normal;
 	
 }
-.block_intrest div{
+
+.block_intrest__select{
 	display: inline-block;
 }
-.block_intrest input{width: 100%;
+
+.block_intrest input{
+	width: 100%;
 	height: 100%;
 	background-color: white; 
 	border:1px solid #b0b0b0;
@@ -197,7 +206,8 @@ br{
 	margin-left: 0;
 	margin-bottom: 5px;
 }
-.block_intrest div:first-child{
+
+.block_intrest__select:first-child{
 	margin-left: 0;
 }
 
@@ -205,7 +215,6 @@ br{
 	background-color: #e9e9e9;
 	color:black;
 }
-
 
 .add_friend:active {
 margin-top: 4px;
@@ -216,10 +225,10 @@ margin-top: 4px;
  height: 20px;
 }
 
-.friends_container{margin: 0% auto;
+.friends_container{
+	margin: 0% auto;
 	margin-top: 10px;
-
-	width: 490px;
+    width: 490px;
 	height: 265px;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -237,7 +246,6 @@ margin-top: 4px;
 }
 
 .friends_box{width: 450px;
-	
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -256,7 +264,8 @@ margin-top: 4px;
 	display:block;
 }
 
-.friend_info{position: relative;
+.friend_info{
+	position: relative;
 	margin-right: 10px;
     margin-left: 15px;
     padding: 0;
@@ -267,7 +276,8 @@ margin-top: 4px;
 
 }
 
-.friend_name{margin: 0;
+.friend_name{
+	margin: 0;
 	font-weight: bold;
 	padding: 0;
 	font-size: 12px;
@@ -275,17 +285,17 @@ margin-top: 4px;
 
 }
 .friend_name a{display: block;
-	
 	border-top: none;
 }
 
-
-.friend_city{margin: 0;
+.friend_city{
+	margin: 0;
 	margin-top: 3px;
 	padding: 0;
 	font-size: 10px;
 	color:#757575;
 }
+
 .friend_status{
 	margin: 0;
 	position: absolute;
@@ -296,13 +306,21 @@ margin-top: 4px;
 	color:green;
 }
 
+.block_intrest__select input.hide{
+	display:none;
+
+}
+
 @media screen and (max-width: 769px){
+
 p{
 	font-size: 20px;
 }
+
 .content{
 	margin-top: 100px;
 }
+
 .tabs-header p{
 	margin: 0;
 	font-size: 24px;
@@ -310,26 +328,25 @@ p{
 .tab-b{
 	width: 650px;
 	height: 360px;
-
 }
 
 .tab-h{font-size: 24px;
 	
 }
-.profile img{
+
+.profile__avatar{
 	width: 186px;
 }
 
 .user_name p {
 	font-size: 18px;
-	;
 }
 
-.user_name  p:first-child{font-size: 36px;
-	
-	
+.user_name  p:first-child{
+	font-size: 36px;
 }
-.profile .add_friend{font-size: 20px;
+
+.profile__add_friend{font-size: 20px;
 	width: 186px;
 	height: 40px;
 }
@@ -339,10 +356,11 @@ p{
 	margin-left: 80px;
 }
 
-.user_interests select{
+.user_interests__select{
 	font-size: 20px;
 	margin-left: 10px;
 }
+
 .interest_btn{
 	width: 120px;
 	height: 30px;
@@ -352,31 +370,34 @@ p{
 }
 
 .block_intrest input{
-font-size: 20px;
+    font-size: 20px;
 
 }
 .friends_box{
 	flex-direction: column;
-
 }
+
 .friends_box img{
 	width: 100px;
 }
+
 .friend_block{
 	width: 350px;
 	height: 120px;
 }
+
 .friend_block p{
 	font-size: 22px;
 }
+
 .tab-b{
 	height: 550px;
 }
 
-
 .friends_container{
 	height: 500px;
 }
+
 .status_result{
 	margin-left: 50px;
 }
@@ -392,25 +413,27 @@ font-size: 20px;
 }
 
 @media screen and (max-width: 675px){ 
+body{
+	background-color: white;
+}
 
 .friends_container{
 	width:100%;
-
 }
 
-.friends_container::-webkit-scrollbar-track {border-radius: 12px;}
-.friends_container::-webkit-scrollbar {width: 14px;}
+.friends_container::-webkit-scrollbar-track {
+	border-radius: 12px;
+}
+
+.friends_container::-webkit-scrollbar {
+	width: 14px;
+}
 
 .tabs{
 	width: 100%;
 }
-section{
-	margin-top: 10px;
-	/*margin-top: 400px;*/
-	
-}
+
 .tabs-header{
-	
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -420,14 +443,13 @@ section{
 	vertical-align: middle;
 }
 
-
 .tabs-body{
 	width: 100%;
 	height: 100%;
-	
 }
 
-.tab-h{width: 100%;
+.tab-h{
+	width: 100%;
 	height: 110px;
 	line-height: 45px;
 	padding: 0;
@@ -436,16 +458,16 @@ section{
     font-size: 44px;
 }
 
-body{
-	background-color: white;
-}
-.content{margin-top: 0;
+.content{
+	margin-top: 0;
 	width: 100%;
 	padding-top: 5px;
 	flex-direction: column;
 	/*height: 1360px;*/
 }
-.tab-b{padding: 0;
+
+.tab-b{
+	padding: 0;
 	padding-top: 0;
     /*height: 1360px;*/
 	width: 100%;
@@ -456,6 +478,7 @@ body{
 	margin: 0;
 	padding-top: 5px;
 }
+
 .user_name{
 	text-align: center;
 	
@@ -467,15 +490,15 @@ body{
 	
 }
 
-.profile .add_friend{
+.profile__add_friend{
 	display: block;
-	height:100px;
+	height:70px;
 	margin: 0 auto;
 	width: 280px;
 	font-size: 26px;
 }
 
-.profile img{
+.profile__avatar{
 	width: 280px;
 }
 
@@ -483,12 +506,14 @@ body{
 	margin: 0;
 }
 
-.user_info{margin: 0 auto;
+.user_info{
+	margin: 0 auto;
 	display:flex;
 	width: 100%;
 	flex-direction: column;
 	align-items: center;
 }
+
 .status_result{
 	margin: 0;
 }
@@ -500,27 +525,27 @@ body{
 .email_adres{
 	margin: 0;
 }
+
 .user_interests{
 	display:flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 0;
 }
+
 .user_interests p {
 	margin-bottom: 0;
 }
 
-.user_interests select{
+.user_interests__select{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	width: 200px;
 	text-align: center;
 	height: 50px;
-
-	
-	
 }
-.user_interests select option {
+
+.user_interests__select__option{
 	
 	font-size: 30px;
 }
@@ -530,17 +555,21 @@ body{
 	font-size: 22px;
 	margin-bottom: 30px;
 } 
+
 .interest_music, .interest_computer, .interest_radio, .interest_dance, .interest_pussyes{
 	width: 100%;
 	/*height: 70px;*/
 }
+
 .interest_pussyes{
 	margin-bottom: 40px;
 }
+
 .friends_box{
 	margin-top: 10px;
 	margin-left: 5px;
 }
+
 .block_intrest{
 	display:flex;
 	flex-direction: column;
@@ -552,62 +581,48 @@ body{
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin: 0;
-	
 }
-.user_name input{width: 80%;
+
+.user_name__value{width: 80%;
 	border:none;
 	text-align: center;
-	
 }
-.email_adres input {
+
+.email_adres__value {
 	width: 100%;
 	border:none;
 	text-align: left;
 	cursor:pointer;
 	text-align: center;
 }
-.phone_number input{width: 100%;
+
+.phone_number__value{width: 100%;
 	border:none;
 	text-align: center;
 	cursor:pointer;
 	text-align: center;
-	
 }
+
 }
 @media screen and (max-width: 365px){
-.friend_block{
-	flex-direction: column;
-	height: 200px;
-	
+
+.friend_name a{
+	font-size: 16px;
+	border:none;
 }
 .friend_name{
 	border:none;
-}
-.friend_name a {
-	display:inline;
-	border-bottom: 1px solid #629ac5;
-}
-
-section{
-	margin-top: 40px;
-}
-
-.friend_block div{
- 
- height: 100%;
- margin: 0;
-}
-
-
-
-.friend_block p:first-child{
-	margin-top: 10px;
-}
-}
-.block_intrest div input.hide{
-	display:none;
 
 }
+p.friend_city{
+	font-size: 14px
+}
+}
+
+@media screen and (max-width: 321px){
+body{margin-top: 20px;}
+}
+
 
 
 
