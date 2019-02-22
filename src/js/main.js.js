@@ -71,19 +71,19 @@ else if(option == 'pussy'){
 }
  }
  
-    var input1 = document.getElementById('1');
+    var input1 = document.getElementById('name');
         input1.value = localStorage.getItem('dataForMyInput1') || 'Виталя Гора';
         input1.oninput = function(){
         localStorage.setItem('dataForMyInput1', input1.value);
     }
 
-    var input2 = document.getElementById('2');
+    var input2 = document.getElementById('phone');
         input2.value = localStorage.getItem('dataForMyInput2') || '+7 (982) 797 67 57';
         input2.oninput = function(){
         localStorage.setItem('dataForMyInput2', input2.value);
     }
     
-    var input3 = document.getElementById('3');
+    var input3 = document.getElementById('email');
         input3.value = localStorage.getItem('dataForMyInput3') || 'artur.torba@mail.ru';
         input3.oninput = function(){
         localStorage.setItem('dataForMyInput3', input3.value);

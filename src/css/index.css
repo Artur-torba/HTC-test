@@ -43,10 +43,10 @@ br{
 }
 
 .tab-h{
-	margin-right: 10px;
+	margin-right: 5px;
 	display: inline-block;
 	border-radius:  5px 5px 0px 0px;
-	padding:5px 15px;
+	padding:0px 15px;
 	height: 30px;
 	line-height: 30px;
 	vertical-align: middle;
@@ -54,6 +54,7 @@ br{
 	color:white;
 	text-align: center;
 	cursor: pointer;
+	font-size: 14px;
 	/*box-shadow: 0 0 3px rgba(0,0,0,0.5);*/
 
 }
@@ -68,8 +69,8 @@ br{
 }
 
 .tab-b{	
-	width: 490px;
-	height: 280px;
+	width: 465px;
+	height: 260px;
 	display:none;
 	padding: 10px;
 	background-color: #ffffff;
@@ -77,9 +78,6 @@ br{
 	box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
-.tabs-body{
-	
-}
 .active{
 	background-color: #fff;
 	color:black;
@@ -88,7 +86,7 @@ br{
 .content{
 	display:flex;
 	justify-content: flex-start;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .profile{
@@ -109,7 +107,7 @@ br{
 	height: 30px;
 	width: 130px;
 	margin-top: 5px;
-	border-radius: 5px;
+	border-radius: 3px;
 	border:none;
 	box-shadow: none;
 	cursor: pointer;
@@ -117,6 +115,7 @@ br{
 }
 
 .info{
+	margin-top: 20px;
 	display: flex;
 	width: 360px;
 	text-align:left;
@@ -134,7 +133,7 @@ br{
 .user_info p{
 	display:inline-block;
 	margin-bottom: 0;
-	margin-top: 7px;
+	margin-top: 5px;
 }
 
 .user_name p {
@@ -153,20 +152,24 @@ br{
 	right: 2px;
 	
 }
+.user_name{
+	position: relative;
+	top: -15px;
+}
 .user_info{
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 .status_result{
-	margin-left: 50px;
+	margin-left: 30px;
 }
 
 .phone_number{
-	margin-left: 122px;
+	margin-left: 105px;
 }
 
 .email_adres{
-	margin-left: 138px;
+	margin-left: 116px;
 }
 
 .user_interests__select{
@@ -228,8 +231,8 @@ margin-top: 4px;
 .friends_container{
 	margin: 0% auto;
 	margin-top: 10px;
-    width: 490px;
-	height: 265px;
+    width: 465px;
+	height: 260px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	flex-wrap: wrap;
@@ -479,10 +482,11 @@ body{
 	padding-top: 5px;
 }
 
-.user_name{
+.user_name{position: static;
 	text-align: center;
 	
 }
+
 .profile{
 	width: 100%;
 	margin: 0;
